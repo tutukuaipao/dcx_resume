@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 07 Feb 2024 13:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/dcx_resume/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>关于我</title>
+      <link>http://localhost:1313/dcx_resume/sections/about/</link>
+      <pubDate>Wed, 07 Feb 2024 13:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/dcx_resume/sections/about/</guid>
+      <description>&lt;p&gt;我是一名充满热情的全栈开发工程师，在 Web 开发和云原生技术领域有丰富经验。我热衷于使用最新技术解决复杂问题，并且积极参与开源社区。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>工作经历</title>
       <link>http://localhost:1313/dcx_resume/sections/experiences/</link>
       <pubDate>Wed, 07 Feb 2024 13:00:00 +0800</pubDate>
@@ -53,15 +62,6 @@
 &lt;li&gt;Web 开发&lt;/li&gt;
 &lt;li&gt;Linux/Unix&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/dcx_resume/sections/about/</link>
-      <pubDate>Tue, 20 Oct 2020 09:40:50 +0600</pubDate>
-      
-      <guid>http://localhost:1313/dcx_resume/sections/about/</guid>
-      <description>&lt;p&gt;I am a passionate developer who loves to code and build things.&lt;/p&gt;</description>
     </item>
     
     <item>

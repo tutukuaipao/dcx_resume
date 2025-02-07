@@ -38,6 +38,12 @@ module:
       target: assets/js/bootstrap.bundle.min.js
     - source: ./node_modules/@fortawesome/fontawesome-free/js/all.min.js
       target: assets/js/fontawesome.min.js
+    - source: ./node_modules/@popperjs/core/dist/umd/popper.min.js
+      target: assets/js/popper.min.js
+    - source: ./node_modules/filterizr/dist/jquery.filterizr.min.js
+      target: assets/js/filterizr.min.js
+    - source: ./node_modules/jquery/dist/jquery.min.js
+      target: assets/js/jquery.min.js
 
 # Manage languages
 languages:
@@ -95,6 +101,7 @@ js:
   build:
     includePaths:
       - node_modules
+      - assets/js
     minify: true
     sourceMap: true
     target: "es2015"
