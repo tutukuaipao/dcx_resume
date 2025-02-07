@@ -1,13 +1,38 @@
 baseURL = "http://example.org/"
 title = "个人简历"
-theme = "PaperMod"
+theme = "toha"
 languageCode = "zh-cn"
-defaultContentLanguage = "zh"
+defaultContentLanguage = "zh-cn"
 
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
+
+# 启用 Git Info
+enableGitInfo = true
+
+# 禁用默认的 taxonomies
+disableKinds = ["taxonomy", "term"]
+
+# 启用表情符号支持
+enableEmoji = true
+
+[languages]
+  [languages.zh-cn]
+    languageName = "中文"
+    weight = 1
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+    style = "monokai"
 
 [params]
     env = "production"
@@ -23,36 +48,57 @@ buildExpired = false
     ShowCodeCopyButtons = true
     ShowToc = true
 
-    [params.homeInfoParams]
-    Title = "您的姓名"
-    Content = "个人简历"
+    # GitHub 个人信息
+    gitRepo = "your-username/your-repo"
+    gitBranch = "master"
 
-    [params.profileMode]
-    enabled = true
-    title = "您的姓名"
-    subtitle = "个人简历"
-    imageUrl = "img/profile.jpg"
-    imageTitle = "个人照片"
-    
-    [[params.profileMode.buttons]]
-    name = "关于我"
-    url = "about"
-    
-    [[params.profileMode.buttons]]
-    name = "工作经验"
-    url = "experience"
-    
-    [[params.profileMode.buttons]]
-    name = "教育经历"
-    url = "education"
+    # 背景图片
+    background = "images/background.jpg"
 
-    [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/your-username"
+    # 个人信息
+    author:
+      name: "您的姓名"
+      nickname: "昵称"
+      image: "images/avatar.jpg"
+      # 给自己贴上一些标签
+      designation: "软件工程师"
+      description: "热爱编程，热爱生活"
+      resume: "files/resume.pdf"
 
-    [[params.socialIcons]]
-    name = "email"
-    url = "mailto:your.email@example.com"
+    # 社交链接
+    socialLinks:
+      - name: Email
+        icon: "fas fa-envelope"
+        url: "mailto:your-email@example.com"
+      - name: Github
+        icon: "fab fa-github"
+        url: "https://github.com/your-username"
+      - name: LinkedIn
+        icon: "fab fa-linkedin"
+        url: "https://linkedin.com/in/your-username"
+
+    # 导航栏自定义链接
+    customMenus:
+      - name: 博客
+        url: "/posts"
+      - name: 简历
+        url: "/resume"
+
+    # 主页设置
+    [params.home]
+      # 启用不同的主页部分
+      [params.home.profileMode]
+        enabled = true
+        title = "您的姓名"
+        subtitle = "软件工程师"
+        description = "热爱编程，热爱生活"
+        imageUrl = "images/avatar.jpg"
+        imageTitle = "头像"
+        buttons:
+          - name: 简历
+            url: "/resume"
+          - name: 博客
+            url: "/posts"
 
 [menu]
   [[menu.main]]
