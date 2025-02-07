@@ -1,8 +1,8 @@
-module github.com/hugo-toha/hugo-toha.github.io
+module github.com/tutukuaipao/dcx_resume
 
 go 1.21
 
-require github.com/hugo-toha/toha/v4 v4.8.0 // indirect
+require github.com/hugo-toha/toha/v4 v4.8.0
 
 // replace(
 //     github.com/hugo-toha/toha/v4 => ../toha
