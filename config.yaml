@@ -77,17 +77,14 @@ build:
   useResourceCacheWhen: fallback
 
 # Configure SCSS processing
-params:
-  # SCSS options
-  scss:
-    targetPath: "css/style.css"
-    enableSourceMap: true
-    precision: 6
-    includePaths:
-      - "node_modules"
-      - "assets/scss"
-    outputStyle: "compressed"
-    transpiler: "dartsass"
+sass:
+  transpiler: dartsass
+  outputStyle: compressed
+  precision: 6
+  enableSourceMap: true
+  includePaths:
+    - node_modules
+    - assets/scss
 
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search
