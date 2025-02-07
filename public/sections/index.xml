@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sections on John&#39;s Blog</title>
+    <link>http://localhost:1313/dcx_resume/sections/</link>
+    <description>Recent content in Sections on John&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Feb 2024 13:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/dcx_resume/sections/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>工作经历</title>
+      <link>http://localhost:1313/dcx_resume/sections/experiences/</link>
+      <pubDate>Wed, 07 Feb 2024 13:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/dcx_resume/sections/experiences/</guid>
+      <description>&lt;h2 id=&#34;高级开发工程师&#34;&gt;高级开发工程师&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;某科技公司&lt;/strong&gt; | 2022 - 至今&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;负责云原生应用开发和微服务架构设计&lt;/li&gt;
+&lt;li&gt;开发和维护核心业务系统&lt;/li&gt;
+&lt;li&gt;优化系统性能，提高系统可靠性&lt;/li&gt;
+&lt;li&gt;指导初级工程师，推广最佳实践&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;开发工程师&#34;&gt;开发工程师&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;某互联网公司&lt;/strong&gt; | 2020 - 2022&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;参与后端服务开发和维护&lt;/li&gt;
+&lt;li&gt;实现新功能和系统优化&lt;/li&gt;
+&lt;li&gt;编写技术文档和单元测试&lt;/li&gt;
+&lt;li&gt;参与代码审查和技术分享&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;初级工程师&#34;&gt;初级工程师&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;某创业公司&lt;/strong&gt; | 2019 - 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;参与产品开发和功能实现&lt;/li&gt;
+&lt;li&gt;编写和维护项目代码&lt;/li&gt;
+&lt;li&gt;解决技术问题和 Bug 修复&lt;/li&gt;
+&lt;li&gt;学习新技术，提升开发技能&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>技能</title>
+      <link>http://localhost:1313/dcx_resume/sections/skills/</link>
+      <pubDate>Wed, 07 Feb 2024 13:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/dcx_resume/sections/skills/</guid>
+      <description>&lt;p&gt;我擅长以下技术领域：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go 开发&lt;/li&gt;
+&lt;li&gt;云原生技术&lt;/li&gt;
+&lt;li&gt;DevOps&lt;/li&gt;
+&lt;li&gt;数据库&lt;/li&gt;
+&lt;li&gt;Web 开发&lt;/li&gt;
+&lt;li&gt;Linux/Unix&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/dcx_resume/sections/about/</link>
+      <pubDate>Tue, 20 Oct 2020 09:40:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/dcx_resume/sections/about/</guid>
+      <description>&lt;p&gt;I am a passionate developer who loves to code and build things.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

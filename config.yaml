@@ -34,6 +34,10 @@ module:
       target: assets/scss/bootstrap
     - source: ./node_modules/include-media/dist
       target: assets/scss/include-media
+    - source: ./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+      target: assets/js/bootstrap.bundle.min.js
+    - source: ./node_modules/@fortawesome/fontawesome-free/js/all.min.js
+      target: assets/js/fontawesome.min.js
 
 # Manage languages
 languages:
@@ -85,6 +89,16 @@ sass:
   includePaths:
     - node_modules
     - assets/scss
+
+# Configure JavaScript processing
+js:
+  build:
+    includePaths:
+      - node_modules
+    minify: true
+    sourceMap: true
+    target: "es2015"
+    format: "iife"
 
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search
