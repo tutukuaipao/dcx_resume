@@ -1,5 +1,6 @@
 baseURL: https://tutukuaipao.github.io/dcx_resume/
 languageCode: zh-cn
+defaultContentLanguage: zh
 title: "王志的个人简历"
 theme: toha
 
@@ -7,6 +8,17 @@ theme: toha
 module:
   imports:
     - path: github.com/hugo-toha/toha/v4
+      mounts:
+        - source: layouts
+          target: layouts
+        - source: static
+          target: static
+        - source: assets
+          target: assets
+        - source: i18n
+          target: i18n
+        - source: archetypes
+          target: archetypes
 
 # Manage languages
 languages:
@@ -14,8 +26,9 @@ languages:
     languageCode: zh-cn
     languageName: 中文
     weight: 1
+    title: "王志的个人简历"
+    description: "王志的个人简历网站"
     home: 首页
-    # copyright
     copyright: © 2024 版权所有
 
 # Control TOC depth
@@ -52,6 +65,16 @@ params:
   gitRepo: https://github.com/tutukuaipao/dcx_resume
   gitBranch: master
 
+  # specify whether you want to write some blog posts or not
+  enableBlogPost: true
+
+  # specify whether you want to show Table of Contents in reading page
+  enableTOC: true
+
+  # Provide newsletter configuration.
+  newsletter:
+    enable: false
+
   features:
     # Enable and configure portfolio
     portfolio:
@@ -60,6 +83,7 @@ params:
     # Enable and configure blog posts
     blog:
       enable: true
+      showAuthor: true
 
     # Enable & configure "Notes" features
     notes:
@@ -73,9 +97,14 @@ params:
     analytics:
       enabled: false
 
-# specify whether you want to show Table of Contents in reading page
-enableTOC: true
+# Enable and configure "Notes" features
+notes:
+  enable: true
 
-# Provide newsletter configuration.
-newsletter:
-  enable: false 
+# Enable comment feature
+comment:
+  enable: false
+
+# Enable analytics
+analytics:
+  enabled: false 
