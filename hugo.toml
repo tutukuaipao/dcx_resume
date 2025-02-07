@@ -56,26 +56,29 @@ enableEmoji = true
     background = "images/background.jpg"
 
     # 个人信息
-    author:
-      name: "您的姓名"
-      nickname: "昵称"
-      image: "images/avatar.jpg"
-      # 给自己贴上一些标签
-      designation: "软件工程师"
-      description: "热爱编程，热爱生活"
-      resume: "files/resume.pdf"
+    [params.author]
+      name = "您的姓名"
+      nickname = "昵称"
+      image = "images/avatar.jpg"
+      designation = "软件工程师"
+      description = "热爱编程，热爱生活"
+      resume = "files/resume.pdf"
 
     # 社交链接
-    socialLinks:
-      - name: Email
-        icon: "fas fa-envelope"
-        url: "mailto:your-email@example.com"
-      - name: Github
-        icon: "fab fa-github"
-        url: "https://github.com/your-username"
-      - name: LinkedIn
-        icon: "fab fa-linkedin"
-        url: "https://linkedin.com/in/your-username"
+    [[params.socialLinks]]
+      name = "Email"
+      icon = "fas fa-envelope"
+      url = "mailto:your-email@example.com"
+
+    [[params.socialLinks]]
+      name = "Github"
+      icon = "fab fa-github"
+      url = "https://github.com/your-username"
+
+    [[params.socialLinks]]
+      name = "LinkedIn"
+      icon = "fab fa-linkedin"
+      url = "https://linkedin.com/in/your-username"
 
     # 导航栏自定义链接
     customMenus:
@@ -85,20 +88,56 @@ enableEmoji = true
         url: "/resume"
 
     # 主页设置
-    [params.home]
-      # 启用不同的主页部分
-      [params.home.profileMode]
-        enabled = true
-        title = "您的姓名"
-        subtitle = "软件工程师"
-        description = "热爱编程，热爱生活"
-        imageUrl = "images/avatar.jpg"
-        imageTitle = "头像"
-        buttons:
-          - name: 简历
-            url: "/resume"
-          - name: 博客
-            url: "/posts"
+    [params.hero]
+      enable = true
+      intro = "你好! 我是"
+      title = "您的姓名"
+      subtitle = "软件工程师"
+      content = "热爱编程，热爱生活"
+      image = "images/avatar.jpg"
+
+    # 关于部分设置
+    [params.about]
+      enable = true
+      title = "关于我"
+      image = "images/avatar.jpg"
+      content = """
+      我是一名软件工程师，热爱编程，热爱生活。
+      """
+
+    # 技能部分设置
+    [params.skills]
+      enable = true
+      title = "技能"
+      items:
+        - title: "编程语言"
+          skills:
+            - name: "Go"
+              percentage: 90
+            - name: "Python"
+              percentage: 85
+            - name: "JavaScript"
+              percentage: 80
+
+    # 经验部分设置
+    [params.experience]
+      enable = true
+      title = "工作经验"
+
+    # 教育部分设置
+    [params.education]
+      enable = true
+      title = "教育经历"
+
+    # 项目部分设置
+    [params.projects]
+      enable = true
+      title = "项目经验"
+
+    # 成就部分设置
+    [params.achievements]
+      enable = true
+      title = "成就与证书"
 
 [menu]
   [[menu.main]]
