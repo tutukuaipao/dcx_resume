@@ -28,6 +28,8 @@ jobs:
     env:
       HUGO_VERSION: 0.121.0
       DART_SASS_VERSION: 1.69.5
+      HUGO_ENVIRONMENT: production
+      HUGO_ENV: production
     steps:
       - name: Install Hugo CLI
         run: |
@@ -73,9 +75,8 @@ jobs:
           ls -la static || true
       - name: Build with Hugo
         env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
           HUGO_ENABLEGITINFO: true
+          HUGO_BASEURL: "${{ steps.pages.outputs.base_url }}/"
         run: |
           echo "Hugo version:"
           hugo version
@@ -85,8 +86,15 @@ jobs:
           node --version
           echo "Yarn version:"
           yarn --version
+          echo "Environment variables:"
+          env | grep HUGO_
           echo "Building site..."
-          HUGO_RESOURCEDIR=$(pwd)/resources hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --logLevel debug
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --environment production \
+            --logLevel debug
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

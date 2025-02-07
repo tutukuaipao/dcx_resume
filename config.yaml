@@ -20,6 +20,8 @@ module:
         - source: archetypes
           target: archetypes
   mounts:
+    - source: assets
+      target: assets
     - source: static/files
       target: static/files
     - source: ./node_modules/flag-icons/flags
@@ -28,8 +30,10 @@ module:
       target: static/files
     - source: ./node_modules/katex/dist/fonts
       target: static/fonts
-    - source: assets
-      target: assets
+    - source: ./node_modules/bootstrap/scss
+      target: assets/scss/bootstrap
+    - source: ./node_modules/include-media/dist
+      target: assets/scss/include-media
 
 # Manage languages
 languages:
@@ -71,6 +75,14 @@ build:
     - source: assets/.*\.(css|sass|scss)$
       target: public/css/
   useResourceCacheWhen: fallback
+
+# Configure SCSS processing
+sass:
+  precision: 6
+  enableSourceMap: true
+  includePaths:
+    - assets/scss
+    - node_modules
 
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search
