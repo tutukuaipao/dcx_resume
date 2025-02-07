@@ -1,48 +1,75 @@
-baseURL = 'http://example.org/'
-languageCode = 'zh-cn'
-title = '个人简历'
-theme = 'hugo-vitae'
+baseURL = "http://example.org/"
+title = "个人简历"
+theme = "PaperMod"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
 
 [params]
-    # 主题颜色
-    color = 'dark'
+    env = "production"
+    description = "个人简历"
+    author = "您的姓名"
     
-    # 头像设置
-    avatar = 'img/profile.jpg'
+    defaultTheme = "auto"
+    ShowShareButtons = false
+    ShowReadingTime = false
+    displayFullLangName = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowToc = true
+
+    profileMode = true
     
-    # 个人信息
-    subtitle = '个人简历'
-    name = '您的姓名'
-    location = '城市，省份'
-    email = 'your.email@example.com'
-    phone = '电话号码'
-    
-    # 社交媒体链接
-    github = 'your-github-username'
-    linkedin = 'your-linkedin-username'
-    
-    # 简历设置
-    enableResume = true
-    resumeTitle = '个人简历'
+    [params.profileMode]
+        enabled = true
+        title = "您的姓名"
+        subtitle = "个人简历"
+        imageUrl = "img/profile.jpg"
+        imageTitle = "个人照片"
+        
+        [[params.profileMode.buttons]]
+        name = "关于我"
+        url = "about"
+        
+        [[params.profileMode.buttons]]
+        name = "工作经验"
+        url = "experience"
+        
+        [[params.profileMode.buttons]]
+        name = "教育经历"
+        url = "education"
+
+    [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/your-username"
+
+    [[params.socialIcons]]
+    name = "email"
+    url = "mailto:your.email@example.com"
 
 [menu]
   [[menu.main]]
-    identifier = 'about'
-    name = '关于我'
-    url = '/about/'
-    weight = 1
-  
+    identifier = "about"
+    name = "关于我"
+    url = "/about/"
+    weight = 10
+
   [[menu.main]]
-    identifier = 'experience'
-    name = '工作经验'
-    url = '/experience/'
-    weight = 2
-  
+    identifier = "experience"
+    name = "工作经验"
+    url = "/experience/"
+    weight = 20
+
   [[menu.main]]
-    identifier = 'education'
-    name = '教育经历'
-    url = '/education/'
-    weight = 3
+    identifier = "education"
+    name = "教育经历"
+    url = "/education/"
+    weight = 30
 
 [params.google]
     analytics = "UA-XXXXXXXXX-X"
