@@ -1,5 +1,6 @@
-+++
-date = '{{ .Date }}'
-draft = true
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-+++
+---
+hero: /images/background/sunrise.jpg
+author:
+    name: Md. Emruz Hossain
+    image: /images/profile-image.jpg
+---
