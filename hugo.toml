@@ -23,26 +23,28 @@ buildExpired = false
     ShowCodeCopyButtons = true
     ShowToc = true
 
-    profileMode = true
-    
+    [params.homeInfoParams]
+    Title = "您的姓名"
+    Content = "个人简历"
+
     [params.profileMode]
-        enabled = true
-        title = "您的姓名"
-        subtitle = "个人简历"
-        imageUrl = "img/profile.jpg"
-        imageTitle = "个人照片"
-        
-        [[params.profileMode.buttons]]
-        name = "关于我"
-        url = "about"
-        
-        [[params.profileMode.buttons]]
-        name = "工作经验"
-        url = "experience"
-        
-        [[params.profileMode.buttons]]
-        name = "教育经历"
-        url = "education"
+    enabled = true
+    title = "您的姓名"
+    subtitle = "个人简历"
+    imageUrl = "img/profile.jpg"
+    imageTitle = "个人照片"
+    
+    [[params.profileMode.buttons]]
+    name = "关于我"
+    url = "about"
+    
+    [[params.profileMode.buttons]]
+    name = "工作经验"
+    url = "experience"
+    
+    [[params.profileMode.buttons]]
+    name = "教育经历"
+    url = "education"
 
     [[params.socialIcons]]
     name = "github"
