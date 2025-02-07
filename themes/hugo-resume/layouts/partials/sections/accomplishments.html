@@ -1,0 +1,21 @@
+<section id="accomplishments" class="resume-section">
+    <div class="section-content">
+        {{ with .Site.GetPage "sections/accomplishments.md" }}
+        <h2>{{ .Title }}</h2>
+        {{ range .Params.accomplishments }}
+        <div class="accomplishment-item">
+            <h3>{{ .title }}</h3>
+            <div class="accomplishment-meta">
+                <span class="organization">{{ .organization }}</span>
+                <span class="date">{{ .date }}</span>
+            </div>
+            {{ with .description }}
+            <div class="description">
+                {{ . | markdownify }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section> 

@@ -1,0 +1,27 @@
+<section id="skills" class="resume-section">
+    <div class="section-content">
+        {{ with .Site.GetPage "sections/skills.md" }}
+        <h2>{{ .Title }}</h2>
+        {{ range .Params.skill_groups }}
+        <div class="skill-group">
+            <h3>{{ .name }}</h3>
+            <div class="skills-list">
+                {{ range .items }}
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">{{ .name }}</span>
+                        {{ with .description }}
+                        <span class="skill-description">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: {{ .percent }}%"></div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section> 

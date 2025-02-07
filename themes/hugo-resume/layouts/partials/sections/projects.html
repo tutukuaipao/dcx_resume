@@ -1,0 +1,25 @@
+<section id="projects" class="resume-section">
+    <div class="section-content">
+        {{ with .Site.GetPage "sections/projects.md" }}
+        <h2>{{ .Title }}</h2>
+        {{ range .Params.projects }}
+        <div class="project-item">
+            <h3>{{ .title }}</h3>
+            <div class="project-meta">
+                <span class="project-date">{{ .date }}</span>
+            </div>
+            <div class="project-description">
+                {{ .description | markdownify }}
+            </div>
+            {{ with .tags }}
+            <div class="project-tags">
+                {{ range . }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section> 

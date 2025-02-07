@@ -1,0 +1,51 @@
+baseURL = "https://tutukuaipao.github.io/dcx_resume/"
+languageCode = "en-us"
+title = "My Resume"
+theme = "hugo-resume"
+
+# 网站参数
+[params]
+  name = "Your Name"
+  description = "A brief description about you"
+  email = "you@example.com"
+  github = "your-github-username"
+  linkedin = "your-linkedin-username"
+  twitter = "your-twitter-username"
+  # 添加更多社交链接或个人信息
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+# SEO 和其他设置
+[markup]
+  [markup.goldmark]
+         [markup.goldmark.renderer]
+           unsafe = true  # 如果你需要支持不安全的 HTML
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 语言设置
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
