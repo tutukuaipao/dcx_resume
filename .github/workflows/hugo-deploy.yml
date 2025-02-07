@@ -37,16 +37,23 @@ jobs:
       - name: List files
         run: |
           pwd
+          echo "=== Root directory ==="
           ls -la
+          echo "=== Theme directory ==="
           ls -la themes/
+          echo "=== Content directory ==="
           ls -la content/
+          echo "=== Hugo version ==="
+          hugo version
+          echo "=== Hugo environment ==="
+          hugo env
 
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --debug --minify --baseURL "https://tutukuaipao.github.io/dcx_resume/"
+          hugo --debug --minify --baseURL "https://tutukuaipao.github.io/dcx_resume/" --verbose
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
