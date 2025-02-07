@@ -28,6 +28,8 @@ module:
       target: static/files
     - source: ./node_modules/katex/dist/fonts
       target: static/fonts
+    - source: assets
+      target: assets
 
 # Manage languages
 languages:
@@ -47,6 +49,28 @@ markup:
     startLevel: 2
     endLevel: 6
     ordered: false
+
+# Configure SASS/SCSS processing
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^CI$
+  http:
+    methods:
+      - GET
+    urls:
+      - .*
+
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/.*\.(js|ts|jsx|tsx)$
+      target: public/js/
+    - source: assets/.*\.(css|sass|scss)$
+      target: public/css/
+  useResourceCacheWhen: fallback
 
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search
