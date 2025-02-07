@@ -96,7 +96,12 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --environment production \
             --logLevel debug \
-            --ignoreVendorPaths "github.com/hugo-toha/toha/v4"
+            --templateMetrics \
+            --templateMetricsHints \
+            --printI18nWarnings \
+            --printPathWarnings \
+            --printUnusedTemplates \
+            --cleanDestinationDir
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
