@@ -19,6 +19,15 @@ module:
           target: i18n
         - source: archetypes
           target: archetypes
+  mounts:
+    - source: static/files
+      target: static/files
+    - source: ./node_modules/flag-icons/flags
+      target: static/flags
+    - source: ./node_modules/@fontsource/mulish/files
+      target: static/files
+    - source: ./node_modules/katex/dist/fonts
+      target: static/fonts
 
 # Manage languages
 languages:
@@ -28,11 +37,12 @@ languages:
     weight: 1
     title: "王志的个人简历"
     description: "王志的个人简历网站"
-    home: 首页
-    copyright: © 2024 版权所有
 
 # Control TOC depth
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
@@ -65,16 +75,11 @@ params:
   gitRepo: https://github.com/tutukuaipao/dcx_resume
   gitBranch: master
 
-  # specify whether you want to write some blog posts or not
-  enableBlogPost: true
+  # Configure the number of section title visible in the top navbar
+  topNavbar:
+    maxVisibleSections: 5
 
-  # specify whether you want to show Table of Contents in reading page
-  enableTOC: true
-
-  # Provide newsletter configuration.
-  newsletter:
-    enable: false
-
+  # Configure various features of this theme
   features:
     # Enable and configure portfolio
     portfolio:
@@ -96,6 +101,24 @@ params:
     # Enable analytics
     analytics:
       enabled: false
+
+    # specify whether you want to show Table of Contents in reading page
+    toc:
+      enable: true
+
+    # Show tags under the post title
+    tags:
+      enable: true
+
+  # Provide footer configuration.
+  footer:
+    enable: true
+    navigation:
+      enable: true
+    contactMe:
+      enable: true
+    newsletter:
+      enable: false
 
 # Enable and configure "Notes" features
 notes:
