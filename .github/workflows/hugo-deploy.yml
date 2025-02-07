@@ -51,18 +51,32 @@ jobs:
         run: |
           npm install
           hugo mod get -u
+          hugo mod verify
+          hugo mod graph
+      - name: List project structure
+        run: |
+          pwd
+          ls -la
+          echo "Hugo Modules:"
+          hugo mod graph
+          echo "Node Modules:"
+          ls -la node_modules
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          HUGO_ENABLEGITINFO: true
         run: |
+          echo "Hugo version:"
           hugo version
-          hugo mod graph
+          echo "Building site..."
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --debug
+            --logLevel info \
+            --printPathWarnings \
+            --printUnusedTemplates
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
