@@ -72,6 +72,15 @@ build:
       target: public/css/
   useResourceCacheWhen: fallback
 
+# Configure SCSS processing
+sass:
+  transpiler: dartsass
+  outputStyle: expanded
+  precision: 6
+  sourceMap: true
+  includePaths:
+    - node_modules
+
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search
 outputs:
