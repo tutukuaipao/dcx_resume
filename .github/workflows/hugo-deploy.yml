@@ -90,12 +90,13 @@ jobs:
           echo "Environment variables:"
           env | grep HUGO_
           echo "Building site..."
-          HUGO_MODULE_REPLACEMENTS="" hugo \
+          hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --environment production \
-            --logLevel debug
+            --logLevel debug \
+            --ignoreVendorPaths "github.com/hugo-toha/toha/v4"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
