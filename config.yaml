@@ -86,6 +86,8 @@ params:
     includePaths:
       - "node_modules"
       - "assets/scss"
+    outputStyle: "compressed"
+    transpiler: "dartsass"
 
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search

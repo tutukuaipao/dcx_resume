@@ -1,6 +1,3 @@
-{{- $sass := .Sass -}}
-{{- $cssTarget := "css/style.css" -}}
-
 // Import Bootstrap
 @import "bootstrap/bootstrap";
 
