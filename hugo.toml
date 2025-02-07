@@ -1,18 +1,24 @@
-baseURL = "https://tutukuaipao.github.io/dcx_resume/"
-languageCode = "en-us"
-title = "My Resume"
-theme = "hugo-resume"
+baseURL = 'https://tutukuaipao.github.io/dcx_resume/'
+languageCode = 'zh-cn'
+title = '个人简历'
+theme = 'hugo-resume'
 
 # 网站参数
 [params]
-  name = "Your Name"
-  description = "A brief description about you"
-  email = "you@example.com"
-  github = "your-github-username"
-  linkedin = "your-linkedin-username"
-  twitter = "your-twitter-username"
-  # 添加更多社交链接或个人信息
-
+  firstName = "张"
+  lastName = "三"
+  address = "深圳"
+  phone = "188-xxxx-xxxx"
+  email = "zhangsan@example.com"
+  
+  # 必要的显示设置
+  showSkills = true
+  showProjects = true
+  showOpenSource = true
+  showPublications = true
+  showExperience = true
+  showEducation = true
+  
 # 菜单配置
 [menu]
   [[menu.main]]
@@ -42,7 +48,7 @@ theme = "hugo-resume"
            unsafe = true  # 如果你需要支持不安全的 HTML
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "JSON"]
 
 # 语言设置
 [languages]

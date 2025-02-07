@@ -34,12 +34,19 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: List files
+        run: |
+          pwd
+          ls -la
+          ls -la themes/
+          ls -la content/
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --minify --baseURL "https://tutukuaipao.github.io/dcx_resume/"
+          hugo --debug --minify --baseURL "https://tutukuaipao.github.io/dcx_resume/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
