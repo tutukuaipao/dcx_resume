@@ -2,7 +2,6 @@ baseURL: https://tutukuaipao.github.io/dcx_resume/
 languageCode: zh-cn
 defaultContentLanguage: zh
 title: "王志的个人简历"
-theme: toha
 
 # Use Hugo modules to add theme
 module:
@@ -64,7 +63,7 @@ markup:
     endLevel: 6
     ordered: false
 
-# Configure SASS/SCSS processing
+# Configure SCSS processing
 security:
   funcs:
     getenv:
@@ -91,7 +90,7 @@ sass:
   transpiler: dartsass
   outputStyle: compressed
   precision: 6
-  enableSourceMap: true
+  sourceMap: true
   includePaths:
     - node_modules
     - assets/scss
@@ -104,8 +103,8 @@ js:
       - assets/js
     minify: true
     sourceMap: true
-    target: "es2015"
-    format: "iife"
+    target: es2015
+    format: iife
 
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search
