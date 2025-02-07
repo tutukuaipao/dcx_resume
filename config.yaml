@@ -2,6 +2,7 @@ baseURL: https://tutukuaipao.github.io/dcx_resume/
 languageCode: zh-cn
 defaultContentLanguage: zh
 title: "王志的个人简历"
+theme: toha
 
 # Use Hugo modules to add theme
 module:
@@ -75,6 +76,38 @@ security:
     urls:
       - .*
 
+# Build configuration
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/.*\.(js|ts|jsx|tsx)$
+      target: public/js/
+    - source: assets/.*\.(css|sass|scss)$
+      target: public/css/
+  useResourceCacheWhen: fallback
+
+# Configure SCSS processing
+sass:
+  transpiler: dartsass
+  outputStyle: compressed
+  precision: 6
+  sourceMap: true
+  includePaths:
+    - node_modules
+    - assets/scss
+
+# Configure JavaScript processing
+js:
+  build:
+    includePaths:
+      - node_modules
+      - assets/js
+    minify: true
+    sourceMap: true
+    target: es2015
+    format: iife
+
 # Site parameters
 params:
   # Background image of the landing page
@@ -121,26 +154,6 @@ params:
       enable: true
     newsletter:
       enable: false
-
-  # Configure Sass
-  sass:
-    includePaths:
-      - node_modules
-      - assets/scss
-    transpiler: dartsass
-    outputStyle: compressed
-    precision: 6
-    sourceMap: true
-
-  # Configure JavaScript
-  js:
-    includePaths:
-      - node_modules
-      - assets/js
-    minify: true
-    sourceMap: true
-    target: es2015
-    format: iife
 
 # Outputs configuration
 outputs:
