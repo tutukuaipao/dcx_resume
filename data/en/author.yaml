@@ -8,7 +8,7 @@ image: "images/author/john.png"
 contactInfo:
   email: "johndoe@example.com"
   phone: "+0123456789"
-  github: johndoe
+  github: "tutukuaipao"
   linkedin: johndoe
   researchgate: john-doe
 
@@ -19,3 +19,5 @@ summary:
   - I love servers
   - I work on open-source projects
   - I love to work with some fun projects
+  - I work with Go
+  - I love to code
