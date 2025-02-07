@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on 个人简历</title>
-    <link>http://localhost:1313/dcx_resume/sections/</link>
+    <link>http://localhost:61175/sections/</link>
     <description>Recent content in About on 个人简历</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>zh-cn</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/dcx_resume/sections/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61175/sections/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>工作经历</title>
-      <link>http://localhost:1313/dcx_resume/sections/experience/</link>
+      <link>http://localhost:61175/sections/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/dcx_resume/sections/experience/</guid>
+      <guid>http://localhost:61175/sections/experience/</guid>
       <description></description>
     </item>
     <item>
       <title>技能</title>
-      <link>http://localhost:1313/dcx_resume/sections/skills/</link>
+      <link>http://localhost:61175/sections/skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/dcx_resume/sections/skills/</guid>
+      <guid>http://localhost:61175/sections/skills/</guid>
       <description></description>
     </item>
     <item>
       <title>证书与成就</title>
-      <link>http://localhost:1313/dcx_resume/sections/accomplishments/</link>
+      <link>http://localhost:61175/sections/accomplishments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/dcx_resume/sections/accomplishments/</guid>
+      <guid>http://localhost:61175/sections/accomplishments/</guid>
       <description></description>
     </item>
     <item>
       <title>项目经验</title>
-      <link>http://localhost:1313/dcx_resume/sections/projects/</link>
+      <link>http://localhost:61175/sections/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/dcx_resume/sections/projects/</guid>
+      <guid>http://localhost:61175/sections/projects/</guid>
       <description></description>
     </item>
   </channel>

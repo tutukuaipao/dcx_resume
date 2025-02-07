@@ -1,57 +1,48 @@
-baseURL = 'https://tutukuaipao.github.io/dcx_resume/'
+baseURL = 'http://example.org/'
 languageCode = 'zh-cn'
 title = '个人简历'
-theme = 'hugo-resume'
+theme = 'hugo-vitae'
 
-# 网站参数
 [params]
-  firstName = "张"
-  lastName = "三"
-  address = "深圳"
-  phone = "188-xxxx-xxxx"
-  email = "zhangsan@example.com"
-  
-  # 必要的显示设置
-  showSkills = true
-  showProjects = true
-  showOpenSource = true
-  showPublications = true
-  showExperience = true
-  showEducation = true
-  
-# 菜单配置
+    # 主题颜色
+    color = 'dark'
+    
+    # 头像设置
+    avatar = 'img/profile.jpg'
+    
+    # 个人信息
+    subtitle = '个人简历'
+    name = '您的姓名'
+    location = '城市，省份'
+    email = 'your.email@example.com'
+    phone = '电话号码'
+    
+    # 社交媒体链接
+    github = 'your-github-username'
+    linkedin = 'your-linkedin-username'
+    
+    # 简历设置
+    enableResume = true
+    resumeTitle = '个人简历'
+
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
+    identifier = 'about'
+    name = '关于我'
+    url = '/about/'
     weight = 1
-
+  
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    identifier = 'experience'
+    name = '工作经验'
+    url = '/experience/'
     weight = 2
-
+  
   [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
+    identifier = 'education'
+    name = '教育经历'
+    url = '/education/'
     weight = 3
 
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 4
-
-# SEO 和其他设置
-[markup]
-  [markup.goldmark]
-         [markup.goldmark.renderer]
-           unsafe = true  # 如果你需要支持不安全的 HTML
-
-[outputs]
-  home = ["HTML", "JSON"]
-
-# 语言设置
-[languages]
-  [languages.en]
-    languageName = "English"
-    weight = 1
+[params.google]
+    analytics = "UA-XXXXXXXXX-X"
