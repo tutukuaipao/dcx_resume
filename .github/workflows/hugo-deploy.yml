@@ -34,19 +34,24 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: List files
+      - name: Debug Info
         run: |
+          echo "=== Current Directory ==="
           pwd
-          echo "=== Root directory ==="
+          echo "=== Root Directory Contents ==="
           ls -la
-          echo "=== Theme directory ==="
+          echo "=== Theme Status ==="
+          git submodule status
+          echo "=== Initialize Theme ==="
+          git submodule update --init --recursive
+          echo "=== Theme Directory Contents ==="
           ls -la themes/
-          echo "=== Content directory ==="
+          echo "=== Content Directory Contents ==="
           ls -la content/
-          echo "=== Hugo version ==="
+          echo "=== Hugo Config ==="
+          cat hugo.toml
+          echo "=== Hugo Version ==="
           hugo version
-          echo "=== Hugo environment ==="
-          hugo env
 
       - name: Build with Hugo
         env:
