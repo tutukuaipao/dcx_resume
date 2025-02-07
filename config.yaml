@@ -1,6 +1,6 @@
 baseURL: https://tutukuaipao.github.io/dcx_resume/
-languageCode: en
-title: "John's Portfolio"
+languageCode: zh-cn
+title: "王志的个人简历"
 theme: toha
 
 # Use Hugo modules to add theme
@@ -10,12 +10,13 @@ module:
 
 # Manage languages
 languages:
-  en:
-    languageName: English
+  zh:
+    languageCode: zh-cn
+    languageName: 中文
     weight: 1
-    home: Home
+    home: 首页
     # copyright
-    copyright: © 2024 Copyright.
+    copyright: © 2024 版权所有
 
 # Control TOC depth
 markup:
@@ -75,7 +76,6 @@ params:
 # specify whether you want to show Table of Contents in reading page
 enableTOC: true
 
-# Provide newsletter configuration. This feature hasn't been implemented yet.
-# Currently, you can just hide it from the footer.
+# Provide newsletter configuration.
 newsletter:
   enable: false 

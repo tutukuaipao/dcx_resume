@@ -1,6 +1,6 @@
 # section information
 section:
-  name: About
+  name: 关于我
   id: about
   enable: true
   weight: 1
@@ -8,10 +8,10 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: 全栈开发工程师
 # your company information
 company:
-  name: Example Corp
+  name: 某科技公司
   url: "https://www.example.com"
 
 # your resume. this file path should be relative to you "static" directory
@@ -19,14 +19,14 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with experience in web development and system design.'
+summary: '我是一名充满热情的全栈开发工程师，在 Web 开发和云原生技术领域有丰富经验。我热衷于使用最新技术解决复杂问题，并且积极参与开源社区。'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "example@gmail.com"
+  url: "mailto:tutukuaipao@gmail.com"
 
 - name: Github
   icon: "fab fa-github"
@@ -38,7 +38,7 @@ socialLinks:
 
 - name: LinkedIn
   icon: "fab fa-linkedin"
-  url: "https://www.linkedin.com/in/johndoe"
+  url: "https://www.linkedin.com/in/wangzhi"
 
 - name: Twitter
   icon: "fab fa-twitter"
@@ -60,42 +60,32 @@ socialLinks:
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
 resourceLinks:
-- title: "My Resume"
+- title: "我的简历"
   url: "files/resume.pdf"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
-- type: certification
-  name: Certified Kubernetes Security Specialist
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
-
-- type: certification
-  name: Istio and IBM Cloud Kubernetes Service
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
-
-- type: certification
-  name: Artificial Intelligence and Machine Learning
-  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
-  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-
 - type: soft-skill-indicator
-  name: Leadership
-  percentage: 85
+  name: 技术创新
+  percentage: 90
   color: blue
 
 - type: soft-skill-indicator
-  name: Team Work
-  percentage: 90
+  name: 团队协作
+  percentage: 85
   color: yellow
 
 - type: soft-skill-indicator
-  name: Hard Working
-  percentage: 85
+  name: 问题解决
+  percentage: 95
   color: orange
+
+- type: soft-skill-indicator
+  name: 项目管理
+  percentage: 80
+  color: green
 
 # you can also provide color code instead of the color name
 # - type: soft-skill-indicator
