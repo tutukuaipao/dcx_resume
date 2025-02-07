@@ -78,11 +78,14 @@ build:
 
 # Configure SCSS processing
 sass:
+  transpiler: dartsass
+  outputStyle: expanded
   precision: 6
   enableSourceMap: true
   includePaths:
     - assets/scss
     - node_modules
+    - _vendor/github.com/hugo-toha/toha/v4/assets/scss
 
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search

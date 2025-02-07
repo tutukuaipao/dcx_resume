@@ -1,0 +1,20 @@
+{{- $sass := .Sass -}}
+{{- $cssTarget := "css/style.css" -}}
+
+// Import Bootstrap
+@import "bootstrap/bootstrap";
+
+// Import include-media for responsive design
+@import "include-media/_include-media";
+
+// Import theme styles
+@import "main";
+@import "sections";
+@import "list";
+@import "single";
+@import "404";
+@import "navigators/navbar";
+@import "navigators/sidebar";
+
+// Import custom styles
+@import "custom"; 
